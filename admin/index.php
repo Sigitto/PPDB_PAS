@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Pendaftaran Siswa Baru | SMK RUS</title>
+    <link rel="stylesheet" type="text/css"href="style.css">
 </head>
 
 <body>

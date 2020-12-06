@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Pendaftaran Siswa Baru | SMK RUS</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
     <p>
         <?php
             if($_GET['status'] == 'sukses'){
-                echo "Pendaftaran siswa baru berhasil!";
+                echo '<script>alert("Welcome to Geeks for Geeks")</script>'; 
             } else {
                 echo "Pendaftaran gagal!";
             }

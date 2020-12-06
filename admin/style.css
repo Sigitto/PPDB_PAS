@@ -1,24 +1,28 @@
 header {
-    background-color: #26d0c9;
-    color: #fff;
-    padding: 100px 80px;
-  }
- 
+  background-color: #26d0c9;
+  color: #fff;
+  padding: 60px 80px;
+}
+
 header h3{
-    font-size: 60px;
+  font-size: 50px;
 }
 
 header h1 {
-    font-size: 140px;
+  font-size: 70px;
 }
 
 h4{
-    color: #73b825;
-    float: left;
-  padding: 30px 20px;
+ font-size: 20px;
+  color: #fff;
+  float: left;
+padding: 10px 22px;
 }
 
-ul{
-    color: #c5991f;
-    padding: 20px 40px;
+li{
+  font-size:18px;
+  list-style: none;
+  float: right;
+  color: #fff;
+  padding: 33px 20px;
 }

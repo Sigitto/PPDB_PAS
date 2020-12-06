@@ -1,6 +1,6 @@
 <?php
 
-include("config.php");
+include("../config.php");
 
 // cek apakah tombol simpan sudah diklik atau blum?
 if(isset($_POST['simpan'])){

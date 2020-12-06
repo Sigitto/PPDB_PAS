@@ -64,7 +64,7 @@
             <div id="footer">
                 
                 <div id="alamat">
-                    <p style="color: rgb(133, 133, 173); font-size: 15px;);">Alamat</p>
+                    <p style="color: rgb(133, 133, 173); font-size: 15px;">Alamat</p>
                     <p style = "margin:0;">Jalan Sukun Raya 9, Besito, Gebog,</p>
                     <p>Kudus, Jawa Tengah 59333</p>
                 </div>

@@ -1,6 +1,6 @@
 <?php
 
-include("config.php");
+include("../config.php");
 
 // kalau tidak ada id di query string
 if( !isset($_GET['id']) ){

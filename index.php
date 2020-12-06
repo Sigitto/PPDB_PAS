@@ -22,7 +22,7 @@
     <p>
         <?php
             if($_GET['status'] == 'sukses'){
-                echo '<script>alert("Welcome to Geeks for Geeks")</script>'; 
+                echo "Pendaftaran siswa baru berhasil!";
             } else {
                 echo "Pendaftaran gagal!";
             }

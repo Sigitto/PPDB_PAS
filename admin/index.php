@@ -5,6 +5,17 @@
     <link rel="stylesheet" type="text/css"href="style.css">
 </head>
 
+<h4>Menu</h4>
+
+
+    <nav>
+        <ul>
+            <li><a href="form-daftar.php">Daftar Baru</a></li>
+            <li><a href="list-siswa.php">Pendaftar</a></li>
+            <li>Login</li>
+        </ul>
+    </nav>
+
 <body>
     <header>
         <h3>Pendaftaran Siswa Baru</h3>

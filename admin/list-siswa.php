@@ -11,7 +11,9 @@
 
         <div id="container">
             <div id="header">
+                <a href="index.php">
                 <img src="logo.png">
+                </a>
                 <h1>SMK Raden Umar Said</h1>
                 <p>Jalan Sukun Raya 9, Besito, Gebog, Kudus</p>
             </div>
@@ -35,7 +37,6 @@
                 <table border="1">
                 <thead>
                     <tr>
-                        <th>No</th>
                         <th>Nama</th>
                         <th>Alamat</th>
                         <th>Jenis Kelamin</th>
@@ -52,7 +53,6 @@
 
                 while($siswa = mysqli_fetch_array($query)){
                     echo "<tr>";
-                    echo "<td>".$siswa['id']."</td>";
                     echo "<td>".$siswa['nama']."</td>";
                     echo "<td>".$siswa['alamat']."</td>";
                     echo "<td>".$siswa['jenis_kelamin']."</td>";

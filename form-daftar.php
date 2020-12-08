@@ -7,7 +7,9 @@
     <body>
             <div id="container">
                 <div id="header">
+                    <a href="index.php">
                     <img src="logo.png">
+                    </a>
                     <h1>SMK Raden Umar Said</h1>
                     <p>Jalan Sukun Raya 9, Besito, Gebog, Kudus</p>
                 </div>

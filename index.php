@@ -12,7 +12,7 @@
         <ul>
             <li><a href="form-daftar.php">Daftar Baru</a></li>
             <li><a href="list-siswa.php">Pendaftar</a></li>
-            <li>Login</li>
+            <li><a href="admin/login.php">Log in</a></li>
         </ul>
     </nav>
 

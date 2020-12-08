@@ -22,7 +22,6 @@ if(isset($_POST['daftar'])){
     }
 
     if($error == true){
-        echo '<script type="text/javascript">alert("hello!");</script>';
         header('Location: form-daftar.php?required');
     } else{ 
         // buat query

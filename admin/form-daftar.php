@@ -1,10 +1,33 @@
+<?php session_start() ?>
+
+<!DOCTYPE html>
 <html>
     <head>
     <title>Formulir Pendaftaran Siswa Baru | SMK RUS</title>
         <link rel="stylesheet" href="style-form-daftar.css">
+        <style>
+        .button {
+            color: white; 
+            display:inline-block; 
+            padding:10px;
+            border-radius: 4px;
+        }
+
+        .grey {
+            background-color: grey; 
+        }
+
+        .black {
+            background-color: black;
+        }
+
+      
+    </style>
     </head>
 
     <body>
+    <?php if(isset($_SESSION["loggedin"])) : ?>
+
             <div id="container">
                 <div id="header">
                     <a href="index.php">
@@ -83,6 +106,10 @@
                     <p>Copyright © 2020, RPL RUS Web Dev</p>
                 </div>
             </div>
-
+            <?php else:?>
+            <h2>ACCESS DENIED, PLEASE LOGIN!</h2>
+            <a href="login.php" class="button grey">Click Here!</a>
+            <a href="../index.php" class="button black">Back To Home</a>
+    <?php endif;?>
     </body>
 </html>

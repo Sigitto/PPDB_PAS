@@ -36,7 +36,7 @@
                 <table border="1">
                 <thead>
                     <tr>
-                     
+                        <th>No</th>
                         <th>Nama</th>
                         <th>Alamat</th>
                         <th>Jenis Kelamin</th>
@@ -49,9 +49,11 @@
                         <?php
                         $sql = "SELECT * FROM calon_siswa";
                         $query = mysqli_query($db, $sql);
-
+                        $number = 0;
                     while($siswa = mysqli_fetch_array($query)){
                         echo "<tr>";
+                        $number++;
+                        echo "<td>".$number."</td>";
                         echo "<td>".$siswa['nama']."</td>";
                         echo "<td>".$siswa['alamat']."</td>";
                         echo "<td>".$siswa['jenis_kelamin']."</td>";

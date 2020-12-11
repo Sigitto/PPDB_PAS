@@ -38,7 +38,7 @@ if(isset($_POST['daftar'])){
             header('Location: index.php?status=gagal');
         } 
     }
-
+ 
 
 } else {
     die("Akses dilarang...");

@@ -26,7 +26,7 @@
                         <form>
                             <p>
                                 <label for="nama"></label>
-                                <input type="text" name="nama" placeholder="Nama Lengkap" />
+                                <input type="text" name="nama" placeholder="Nama Lengkap"  pattern="[a-zA-Z]+" />
                             </p>
                             <p>
                                 <label for="alamat"></label>

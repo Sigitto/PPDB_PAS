@@ -100,7 +100,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     <div id="container">
         <div id="header">
-            <a href="index.php">
+            <a href="../index.php">
                 <img src="logo.png">
             </a>
             <h1>SMK Raden Umar Said</h1>

@@ -93,32 +93,62 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css">
+    <link rel="stylesheet" href="style-login.css">
 </head>
 <body>
-    <div class="wrapper">
-        <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-                <span class="help-block"><?php echo $username_err; ?></span>
-            </div>    
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control">
-                <span class="help-block"><?php echo $password_err; ?></span>
+
+    <div id="container">
+        <div id="header">
+            <a href="index.php">
+                <img src="logo.png">
+            </a>
+            <h1>SMK Raden Umar Said</h1>
+            <p>Jalan Sukun Raya 9, Besito, Gebog, Kudus</p>
+        </div>
+    </div>
+
+    <div id="container2">
+        <div id="body">
+            <div class="wrapper">
+                <h2>Login</h2>
+                <p>Please fill in your credentials to login.</p>
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+
+                    <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                        <label>Username</label>
+                        <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+                        <span class="help-block"><?php echo $username_err; ?></span>
+                    </div>    
+                    <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control">
+                        <span class="help-block"><?php echo $password_err; ?></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary" value="Login">
+                    </div>
+                        <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+                </form>
+                </div>  
             </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login">
+        </div>
+
+        <div id="footer">    
+                <div id="alamat">
+                    <p style="color: rgb(133, 133, 173); font-size: 15px;">Alamat</p>
+                    <p style = "margin:0;">Jalan Sukun Raya 9, Besito, Gebog,</p>
+                    <p>Kudus, Jawa Tengah 59333</p>
+                </div>
+
+                <div id="kontak">
+                    <p style="color: rgb(133, 133, 173); font-size: 15px;" >Contact Person</p>
+            
+                </div> 
+                    
+                <div id="copyright">
+                    <p>Copyright © 2020, RPL RUS Web Dev</p>
+                </div>
             </div>
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
-        </form>
-    </div>    
 </body>
 </html>
